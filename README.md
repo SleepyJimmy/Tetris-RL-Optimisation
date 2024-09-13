@@ -37,10 +37,10 @@ A total of **26 state features** are used to represent the Tetris board states, 
 
 
 ## Results
+These graphs show the performance of the GA and the baseline PPO algorithm. Evidently, the GA outperforms the PPO and even reaches convergence.
 <p align="center">
-  <img src="results/GA_graph.png" alt="GA Graph" width="300"/>
-  <img src="results/PPO_graph.png" alt="PPO Graph" width="300"/>
-  <img src="results/PPO_CDL_RND_graph.png" alt="PPO CDL RND Graph" width="300"/>
+  <img src="results/GA_graph.png" alt="GA Graph" width="450"/>
+  <img src="results/PPO_graph.png" alt="PPO Graph" width="450"/>
 </p>
 
 ## Conclusion
