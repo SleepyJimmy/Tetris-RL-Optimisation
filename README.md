@@ -7,15 +7,6 @@
 This repository presents the differences in performance between a Genetic Algorithm (GA) and the Proximal Policy Optimisation (PPO) algorithm, including variants that integrate exploration-based methods like Curiosity-Driven Learning (CDL) and Random Network Distillation (RND). Additionally, it examines how different weight initialisation strategies impact the learning and performance of these algorithms in the context of the game Tetris.
 
 
-## Objectives
-
-The primary objectives of this project are:
-
-- To compare the performance of genetic algorithms (GA) and reinforcement learning methods like PPO in Tetris.
-- To explore the impact of intrinsically motivated learning techniques (CDL and RND) on the performance of PPO.
-- To evaluate the importance of weight initialisation strategies in the learning efficiency of PPO.
-- To test the integration of advanced weight initialisation methods, such as population-based approaches and genetic algorithm optimised weights, in the PPO framework.
-
 ## State Representation Using State Features
 
 In this project, Tetris game states are represented using a set of **state features** rather than raw pixel data. State features capture essential characteristics of the game board, which simplifies the learning process for reinforcement learning algorithms by reducing the complexity of the state space. 
@@ -28,16 +19,6 @@ A total of **26 state features** are used to represent the Tetris board states, 
 - **Row and column transitions:** The number of horizontal and vertical transitions between empty and filled cells.
 - **Landing height, maximum column height, wells, and eroded piece cells:** Metrics that capture advanced game dynamics, such as where a tetromino lands and the resulting clearances.
 
-These features are derived from the works of Dellacherie and Bertsekas and Tsitsiklis, which have been shown to be highly effective in representing the state of the Tetris game.
-
-By using state features, the algorithms can more efficiently evaluate the value of different game states and actions, leading to improved decision-making and performance.
-
-## Features
-
-- **Custom Tetris Environment**: A Gym-compatible Tetris environment (`gym-simpletetris`) designed for reinforcement learning experiments.
-- **Reinforcement Learning Algorithms**: Implementations of standard PPO and modified versions incorporating CDL, RND, and weight initialisation strategies.
-- **Genetic Algorithms**: Implementation of a genetic algorithm for Tetris, including the evolution of neural network weights.
-- **Evaluation and Analysis Tools**: Scripts to evaluate the performance of the agents using metrics such as lines cleared, total score, and variability.
 
 ## PPO modifications
 ### PPO with CDL
