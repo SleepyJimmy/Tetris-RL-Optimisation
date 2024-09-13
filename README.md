@@ -82,7 +82,7 @@ This project shows that optimising the initial weight distribution is crucial fo
 3. Install the custom Tetris environment:
    ```sh
    cd environment/gym-simpletetris
-   pip install -e .
+   pip install -e ./
    ```
 
 ## Usage
