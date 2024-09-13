@@ -37,10 +37,11 @@ A total of **26 state features** are used to represent the Tetris board states, 
 
 
 ## Results
-<div style="display: flex; justify-content: center; align-items: center;">
-  <img src="GA_graph.png" alt="Image 1" style="width: 300px; margin-right: 10px;">
-  <img src="/results/Average_Score_of_PPO.png" alt="Image 2" style="width: 300px;">
-</div>
+<p align="center">
+  <img src="results/GA_graph.png" alt="GA Graph" width="300"/>
+  <img src="results/PPO_graph.png" alt="PPO Graph" width="300"/>
+  <img src="results/PPO_CDL_RND_graph.png" alt="PPO CDL RND Graph" width="300"/>
+</p>
 
 ## Conclusion
 This project shows that optimising the initial weight distribution is crucial for improving the performance of reinforcement learning algorithms in Tetris, more so than merely integrating exploration-based methods. Further research could explore more advanced weight initialisation techniques and their application across different environments.
