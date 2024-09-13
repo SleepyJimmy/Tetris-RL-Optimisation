@@ -23,6 +23,7 @@ A total of **26 state features** are used to represent the Tetris board states, 
 - **Row and column transitions:** The number of horizontal and vertical transitions between empty and filled cells.
 - **Landing height, maximum column height, wells, and eroded piece cells:** Metrics that capture advanced game dynamics, such as where a tetromino lands and the resulting clearances.
 
+<br>
 
 ## PPO modifications
 ### PPO with CDL
@@ -39,6 +40,7 @@ A total of **26 state features** are used to represent the Tetris board states, 
 ### GA-PPO
 **Genetic Algorithm-Assisted PPO (GA-PPO)** leverages a Genetic Algorithm (GA) to pre-optimise the weights of the neural network before integrating them into a PPO agent. This strategy aims to provide the PPO with a strong starting point by using evolved weights that have already been refined for better performance. While this method showed an initial boost in learning speed, it faced challenges such as overfitting and catastrophic interference, leading to varied results over time.
 
+<br>
 
 ## Results
 ### GA and baseline PPO
@@ -61,10 +63,13 @@ These graphs show the difference that weight initialisation strategies had on th
   <img src="results/GA_PPO_graph.png" alt="GA-PPO Graph" width="450"/>
 </p>
 
+<br>
+
 ## Conclusion
 This project shows that optimising the initial weight distribution is crucial for improving the performance of reinforcement learning algorithms in Tetris, more so than merely integrating exploration-based methods. Further research could explore more advanced weight initialisation techniques and the combination of both these major approaches.
 
 
+<br>
 
 ## Installation
 1. Clone the repository:
