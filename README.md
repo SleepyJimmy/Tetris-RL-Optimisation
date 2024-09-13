@@ -38,8 +38,8 @@ A total of **26 state features** are used to represent the Tetris board states, 
 
 ## Results
 <div style="display: flex; justify-content: center; align-items: center;">
-  <img src="results/Average_Score_of_GA.png" alt="Image 1" style="width: 300px; margin-right: 10px;">
-  <img src="results/Average_Score_of_PPO.png" alt="Image 2" style="width: 300px;">
+  <img src="/results/Average_Score_of_GA.png" alt="Image 1" style="width: 300px; margin-right: 10px;">
+  <img src="/results/Average_Score_of_PPO.png" alt="Image 2" style="width: 300px;">
 </div>
 
 ## Conclusion
@@ -47,19 +47,11 @@ This project shows that optimising the initial weight distribution is crucial fo
 
 
 
-## Setup
 
-### Prerequisites
-
-- Python 3.7+
-- Required Python packages: `numpy`, `gym`, `pygame`, `matplotlib`, etc.
-
-### Installation
-
+## Installation
 1. Clone the repository:
    ```sh
    git clone https://github.com/yourusername/Tetris-RL-Optimisation.git
-   cd Tetris-RL-Optimisation
    ```
 2. Install the dependencies:
    `pip install -r requirements.txt`
@@ -70,7 +62,7 @@ This project shows that optimising the initial weight distribution is crucial fo
    pip install -e .
    ```
 
-### Usage
+## Usage
 To run experiments, use the provided scripts. For example, to train a PPO agent integrated with curiosity-driven learning (CDL):
 `python run_ppo_cdl.py`
 
