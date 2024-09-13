@@ -25,6 +25,19 @@ A total of **26 state features** are used to represent the Tetris board states, 
 
 <br>
 
+## Next State Calculation
+Unlike traditional reinforcement learning methods where the "next state" is often determined by a single action (e.g., moving a piece left or right), this implementation generates all possible configurations that could result from placing the falling Tetris piece in every possible position along the x-axis and with all four possible rotations (0°, 90°, 180°, and 270°).
+
+For each possible configuration:
+
+1. The agent considers every potential placement by evaluating the consequences of all available actions (e.g. shift left, shift right, rotate, and drop).
+2. The agent will generates 44 unique next states from the current state, each representing a different way the piece could be placed.
+3. The actions leading to each next state are then used to guide the agent's decision-making process, optimising for maximum rewards.
+  
+By considering all potential next states rather than just a single immediate outcome, the agent gains a broader perspective on the game environment, allowing for more strategic decisions and improving the overall performance of the learning algorithms.
+
+<br>
+
 ## PPO modifications
 ### PPO with CDL
 **Curiosity-Driven Learning (CDL)** was integrated with the PPO algorithm to encourage exploration by rewarding the agent for visiting novel states. The intrinsic reward is calculated based on the prediction error between the expected and actual next states. Higher prediction errors indicate unfamiliar states, incentivising the agent to explore and discover more efficient strategies during gameplay. However, results showed that merely adding curiosity-based exploration without considering weight initialisation led to suboptimal performance.
