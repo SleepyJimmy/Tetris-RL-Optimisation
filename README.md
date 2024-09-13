@@ -3,8 +3,14 @@
 ## Overview
 This repository presents the differences in performance between a Genetic Algorithm (GA) and the Proximal Policy Optimisation (PPO) algorithm, including variants that integrate exploration-based methods like Curiosity-Driven Learning (CDL) and Random Network Distillation (RND). Additionally, it examines how different weight initialisation strategies impact the learning and performance of these algorithms in the context of the game Tetris.
 
-Here is an example of a trained GA clearing lines in the game of Tetris:
-![Reinforcement learning agent playing Tetris](docs/tetris-gif.gif)
+Here is an example of a trained GA agent clearing lines in the game of Tetris:
+
+<p align="center">
+  <img src="docs/tetris-gif.gif" alt="Reinforcement learning agent playing Tetris" width="400"/>
+</p>
+
+*Figure: Demonstration of a trained Genetic Algorithm (GA) agent playing Tetris, showing its ability to clear lines efficiently.*
+
 
 
 ## State Representation Using State Features
