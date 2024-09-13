@@ -38,7 +38,7 @@ A total of **26 state features** are used to represent the Tetris board states, 
 
 ## Results
 <div style="display: flex; justify-content: center; align-items: center;">
-  <img src="/results/Average_Score_of_GA.png" alt="Image 1" style="width: 300px; margin-right: 10px;">
+  <img src="Average Score of GA.png" alt="Image 1" style="width: 300px; margin-right: 10px;">
   <img src="/results/Average_Score_of_PPO.png" alt="Image 2" style="width: 300px;">
 </div>
 
