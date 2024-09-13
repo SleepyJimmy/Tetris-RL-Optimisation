@@ -10,8 +10,7 @@ Here is an example of a trained GA agent playing the game of Tetris:
 </p>
 
 
-<div style="margin-top: 20px;"></div>
-
+<br>
 ## State Representation Using State Features
 In this project, Tetris game states are represented using a set of **state features** rather than raw pixel data. State features capture essential characteristics of the game board, which simplifies the learning process for reinforcement learning algorithms by reducing the complexity of the state space. 
 
