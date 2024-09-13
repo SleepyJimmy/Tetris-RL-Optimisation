@@ -46,11 +46,13 @@ These graphs show the performance of the GA and the baseline PPO algorithm. Evid
   <img src="results/GA_graph.png" alt="GA Graph" width="450"/>
   <img src="results/PPO_graph.png" alt="PPO Graph" width="450"/>
 </p>
+
 ### PPO with CDL and RND
 This graph shows the performance of the exploration based methods (CDL and RND) integrated within the baseline PPO. No notable increase in performance was observed.
 <p align="center">
   <img src="results/PPO_CDL_RND_graph.png" alt="PPO CDL and RND graph" width="450"/>
 </p>
+
 ### PPO-PI and GA-PPO
 These graphs show the difference that weight initialisation strategies had on the PPO algorithm. Significant increases in performance was observed in these weight initialisation strategies. However, it is evident that the pre-optimisation of the PPO's weights using the GA caused a negative impact on performance in the later episodes of the PPO. This could be attributed to improper or unsynchronised training of the critic network during the pre-optimisation process. 
 <p align="center">
