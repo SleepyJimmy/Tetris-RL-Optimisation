@@ -1,6 +1,4 @@
-# Tetris-RL-Optimisation
-
-## Overview
+# Overview
 This repository presents the differences in performance between a Genetic Algorithm (GA) and the Proximal Policy Optimisation (PPO) algorithm, including variants that integrate exploration-based methods like Curiosity-Driven Learning (CDL) and Random Network Distillation (RND). Additionally, it examines how different weight initialisation strategies impact the learning and performance of these algorithms in the context of the game Tetris.
 
 
